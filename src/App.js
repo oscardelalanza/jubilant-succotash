@@ -28,7 +28,7 @@ function App() {
       <P>Hello world</P>
       <Button>Sent</Button>
       <Button primary>Sent</Button>
-      <BlockButton primary>Sent</BlockButton>
+      <BlockButton primary as="a" href="#">Sent</BlockButton>
     </Content>
   );
 }
