@@ -17,12 +17,18 @@ const Button = styled.button`
   border-radius: 4px;
 `
 
+const BlockButton = styled(Button)`
+  width: 100%;
+  font-size: 24px;
+`
+
 function App() {
   return (
     <Content>
       <P>Hello world</P>
       <Button>Sent</Button>
       <Button primary>Sent</Button>
+      <BlockButton primary>Sent</BlockButton>
     </Content>
   );
 }
