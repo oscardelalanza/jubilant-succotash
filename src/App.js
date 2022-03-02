@@ -10,11 +10,15 @@ const Content = styled.div`
 `
 
 const Button = styled.button`
+  transition: box-shadow 0.2s ease;
   background-color: ${props => props.primary ? 'red' : 'white'};
   color: ${props => props.primary ? 'white' : 'red'};
   padding: 10px 15px;
   border: solid 2px red;
   border-radius: 4px;
+  &:hover {
+    box-shadow: 1px 2px 5px rgb(0,0,0,0.3);
+  }
 `
 
 const BlockButton = styled(Button)`
